@@ -1,7 +1,7 @@
 //if else
 
 var name = '2'
-var voca = 'b'
+var voca = 'c'
 
 if (name == '' && voca == ''){
   console.log('Submit Name and Vocation');
