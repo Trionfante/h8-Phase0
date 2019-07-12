@@ -24,5 +24,8 @@ console.log('\n');
 
 while (rows3 > 0){
     rows3--;
-    console.log(starb+='*');
+    //console.log(starb+='b');
+      for (count=1;count>0;count--){
+      console.log(stara+='*');
+    }
 }
