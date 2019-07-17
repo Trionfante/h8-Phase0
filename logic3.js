@@ -29,6 +29,15 @@ function konversiMenit(menit) {
    }}
  }
   
+  function timeConvert2(min) {
+  var jam = Math.floor(min / 60);
+  var check = min % 60;
+  if (check <= 10) {
+  check = '0' + check;
+  }
+  return jam + ':' + check;
+  }
+
   console.log(konversiMenit(63)); // 1:03
   console.log(konversiMenit(124)); // 2:04
   console.log(konversiMenit(53)); // 0:53
@@ -40,3 +49,9 @@ console.log('');
   console.log(timeConvert(3)); // 0:53
   console.log(timeConvert(88)); // 1:28
   console.log(timeConvert(120)); // 2:00
+console.log('');
+  console.log(timeConvert2(63)); // 1:03
+  console.log(timeConvert2(124)); // 2:04
+  console.log(timeConvert2(3)); // 0:53
+  console.log(timeConvert2(88)); // 1:28
+  console.log(timeConvert2(120)); // 2:00
