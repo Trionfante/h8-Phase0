@@ -12,11 +12,31 @@ function konversiMenit(menit) {
     omenit += '0' + rmenit;
   } else omenit = rmenit;
 
-  return num + " minutes = " + rjam + ":" + omenit;
-  }
+  return rjam + ":" + omenit;
+ }
+
+  function timeConvert(min) {
+    if (min <= 10){
+      return "0:" + "0" + min;
+    } else if (min <= 60){
+      return "0:"+ min;
+    } else {
+      var check = min%60;
+      if (check <= 10){
+      return Math.floor(min/60) + ":" + '0' + check;
+   } else {
+    return Math.floor(min/60) + ":" + check;
+   }}
+ }
   
   console.log(konversiMenit(63)); // 1:03
   console.log(konversiMenit(124)); // 2:04
   console.log(konversiMenit(53)); // 0:53
   console.log(konversiMenit(88)); // 1:28
   console.log(konversiMenit(120)); // 2:00
+console.log('');
+  console.log(timeConvert(63)); // 1:03
+  console.log(timeConvert(124)); // 2:04
+  console.log(timeConvert(3)); // 0:53
+  console.log(timeConvert(88)); // 1:28
+  console.log(timeConvert(120)); // 2:00
