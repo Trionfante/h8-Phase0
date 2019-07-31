@@ -1,3 +1,4 @@
+/*
 // 1. Newton's Second Law
     
     // Algorithm
@@ -65,3 +66,5 @@
         ELSE 
             PRINT bad
     PRINT done
+
+*/
