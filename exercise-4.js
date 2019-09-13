@@ -1,11 +1,11 @@
 //switch
 
-var tanggal = 2
-var bulan = 1
-var tahun = 2021
+var tanggal = 17
+var bulan = 08
+var tahun = 1945
 
 if ((tanggal > 31 || bulan > 12 || tahun > 2200) || (tanggal < 1 || bulan < 1 || tahun < 1900)){
-    console.log("salah cuk");
+    console.log("tanggal yang anda masukkan salah :(");
 } else {
     switch (bulan){
         case 1:
@@ -44,5 +44,5 @@ if ((tanggal > 31 || bulan > 12 || tahun > 2200) || (tanggal < 1 || bulan < 1 ||
         case 12:
             bulan = "December";
     }
-    console.log("tanggal " + tanggal + " " + bulan + " tahun " + tahun);
+    console.log(tanggal + ' ' + bulan + ' ' + tahun);
 }
